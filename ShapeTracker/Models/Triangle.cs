@@ -5,6 +5,12 @@ namespace ShapeTracker.Models
   public class Triangle 
   {
     private int _side1;
+    public int Side1
+    {
+      get { return _side1; }
+      set { _side1 = value; }
+    }
+
     private int _side2;
     private int _side3;
 
@@ -19,11 +25,7 @@ namespace ShapeTracker.Models
       _instances.Add(this);
     }
 
-    public int GetSide1()
-    {
-      return _side1;
-    }
-
+    
     public int GetSide2()
     {
       return _side2;
