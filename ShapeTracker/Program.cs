@@ -36,7 +36,6 @@ namespace ShapeTracker
     
     if (userInput == "yes")
     {
-      // We have not created the CheckTriangleType() UI method yet.
       CheckTriangleType(tri);
     }
     else
@@ -52,6 +51,14 @@ namespace ShapeTracker
       tri.SetSide2(int.Parse(stringNumber2));  
       tri.SetSide3(int.Parse(stringNumber3)); 
       ConfirmOrEditTriangle(tri);
+    }
+
+    static void CheckTriangleType(Triangle tri)
+    {
+      string result = tri.CheckType();
+      Console.WriteLine("-----------------------------------------");
+      Console.WriteLine("Your result is: " + result + ".");
+      Console.WriteLine("-----------------------------------------");
     }
   }
 }
