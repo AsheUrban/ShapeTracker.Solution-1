@@ -33,6 +33,25 @@ namespace ShapeTracker
       Console.WriteLine($"Side 3 has a length of {tri.GetSide3()}.");
       Console.WriteLine("Is that correct? Enter 'yes' to proceed, or 'no' to re-enter the triangle's sides");
       string userInput = Console.ReadLine();  
+    
+    if (userInput == "yes")
+    {
+      // We have not created the CheckTriangleType() UI method yet.
+      CheckTriangleType(tri);
+    }
+    else
+    {
+      Console.WriteLine("Let's fix your triangle. Please enter the 3 sides again!");
+      Console.WriteLine("Please enter a number:");
+      string stringNumber1 = Console.ReadLine();  
+      Console.WriteLine("Enter another number:");
+      string stringNumber2 = Console.ReadLine();  
+      Console.WriteLine("Enter a third number:");
+      string stringNumber3 = Console.ReadLine();  
+      tri.SetSide1(int.Parse(stringNumber1));  
+      tri.SetSide2(int.Parse(stringNumber2));  
+      tri.SetSide3(int.Parse(stringNumber3)); 
+      ConfirmOrEditTriangle(tri);
     }
   }
 }
