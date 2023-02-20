@@ -9,7 +9,7 @@ namespace ShapeTracker.Tests
     [TestMethod]
     public void TriangleConstructor_CreatesInstanceOfTriangle_Triangle()
     {
-      Triangle newTriangle = new Triangle(2);
+      Triangle newTriangle = new Triangle(2); // passes a length param property value
       Assert.AreEqual(typeof(Triangle), newTriangle.GetType());
     }
 
@@ -23,6 +23,18 @@ namespace ShapeTracker.Tests
       int result = newTriangle.Side1;
       // Assert
       Assert.AreEqual(length1, result);
+    }
+
+    [TestMethod]
+    public void SetSide1_SetsValueOfSide1_Void()
+    {
+      // Arrange
+      Triangle newTriangle = new Triangle(3);
+      int newLength1 = 44;
+      // Act
+      newTriangle.Side1 = newLength1;
+      // Assert
+      Assert.AreEqual(newLength1, newTriangle.Side1);
     }
   }
 }
