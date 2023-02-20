@@ -36,5 +36,18 @@ namespace ShapeTracker.Tests
       // Assert
       Assert.AreEqual(newLength1, newTriangle.Side1);
     }
+
+    // Side 2: testing for auto-implemented properties
+    [TestMethod]
+    public void GetSide2_ReturnsSide2_Int()
+    {
+      // Arrange
+      int length2 = 3;
+      Triangle newTriangle = new Triangle(2, length2);
+      // Act
+      int result = newTriangle.Side2;
+      // Assert
+      Assert.AreEqual(length2, result);
+    }
   }
 }
