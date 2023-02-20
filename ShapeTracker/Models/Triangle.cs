@@ -29,7 +29,7 @@ namespace ShapeTracker.Models
 
     public int GetSide2()
     {
-      return _side2;
+      return Side2;
     }
 
     public int GetSide3()
@@ -44,7 +44,7 @@ namespace ShapeTracker.Models
 
     public void SetSide2(int newSide)
     {
-      _side2 = newSide;
+      Side2 = newSide;
     }
 
     public void SetSide3(int newSide)

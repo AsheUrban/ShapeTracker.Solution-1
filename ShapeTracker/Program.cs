@@ -60,8 +60,8 @@ namespace ShapeTracker
       Console.WriteLine("What's next?");
       Console.WriteLine("Would you like to check a new triangle (new)?");
       Console.WriteLine("Please enter 'new' to check the type of a new triangle. To exit, enter any key.");
-      string userResponse = Console.ReadLine(); 
-      if (userResponse == "new" || userResponse == "New")
+      string userResponse = Console.ReadLine().ToLower(); 
+      if (userResponse == "new")
       {
         Main();
       }
