@@ -1,7 +1,8 @@
 using System;
 using ShapeTracker.Models; 
 
-namespace ShapeTracker{
+namespace ShapeTracker
+{
   class Program
   {
     static void Main() 
