@@ -2,9 +2,9 @@ namespace ShapeTracker.Models
 {
   public class Triangle 
   {
-    public int _Side1;
-    public int _Side2;
-    public int _Side3;
+    private int _Side1;
+    private int _Side2;
+    private int _Side3;
 
     public Triangle(int length1, int length2, int length3) 
     {
