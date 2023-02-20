@@ -12,17 +12,17 @@ namespace ShapeTracker.Models
       _Side2 = length2;
       _Side3 = length3;
     }
-    public int GetSide1()
+    public void GetSide1(int newSide)
     {
-      return _Side1;
+      _Side1 = newSide;
     }
-    public int GetSide2()
+    public void GetSide2(int newSide)
     {
-      return _Side2;
+      _Side2 = newSide;
     }
-    public int GetSide3()
+    public void GetSide3(int newSide)
     {
-      return _Side3;
+      _Side3 = newSide;
     }
     public string CheckType() 
     { 
