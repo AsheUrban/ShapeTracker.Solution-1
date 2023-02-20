@@ -61,5 +61,19 @@ namespace ShapeTracker.Tests
       // Assert
       Assert.AreEqual(newLength2, newTriangle.Side2);
     }
+
+    // Side 3: Accessing & Testing A Private Field through its Getter and Setter Methods
+
+    [TestMethod]
+    public void GetSide3_ReturnsSide3_Int()
+    {
+      // Arrange
+      int length3 = 55;
+      Triangle newTriangle = new Triangle(2, 3, length3);
+      // Act
+      int result = newTriangle.GetSide3();
+      // Assert
+      Assert.AreEqual(length3, result);
+    }
   }
 }
