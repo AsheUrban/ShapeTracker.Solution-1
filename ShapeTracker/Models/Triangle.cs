@@ -12,13 +12,18 @@ namespace ShapeTracker.Models
     }
 
     public int Side2 { get; set; }
-
-    public Triangle(int length1, int length2)
+    private int _side3; 
+    public Triangle(int length1, int length2, int length3)
     {
       _side1 = length1;
       Side2 = length2;
+      _side3 = length3;
     }
 
+    public int GetSide3()
+    {
+      return _side3;
+    }
 
   }
 }
