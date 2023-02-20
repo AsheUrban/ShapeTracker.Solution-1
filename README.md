@@ -21,14 +21,15 @@ A shape tracker application where a user should be able to type in an amount and
 - Input your email address and click the "Get Free Key" button.
 - You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
 - At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for two weeks. -->
-- Clone or download to your local repository click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
+<!-- - Clone or download to your local repository click  -->
 <!-- - add .env to our .gitignore file now.
 - create a .env file in the root directory of our project -->
 <!-- - The variable that we're storing in the .env is the key: API_KEY -->
-- run npm install
-- in your terminal, run $npm install dotenv-webpack@2.0.0 --save-dev
-- npm run start to build and launch server
 
+1. Clone the repo, click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
+2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ShapeTracker".
+3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
+4. Optionally, you can run "dotnet build" to compile this console app without running it.
 
 ## Known Bugs
 
