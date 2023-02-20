@@ -72,5 +72,10 @@ namespace ShapeTracker.Models
         return "isosceles triangle";
       }
     }
+
+    public static List<Triangle> GetAll()
+    {
+      _instances.Clear();
+    }
   }
 }
