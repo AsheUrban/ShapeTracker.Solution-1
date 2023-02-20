@@ -1,8 +1,10 @@
 // using System;
-
-public class Triangle
+namespace ShapeTracker.Models
 {
-  // static void TiangleSol() 
-  // c# pgm code goes here.
-  // Console.WriteLine("Hello Triangle's business logic code"); 
+  public class Triangle
+  {
+    // static void TiangleSol() 
+    // c# pgm code goes here.
+    // Console.WriteLine("Hello Triangle's business logic code"); 
+  }
 }
