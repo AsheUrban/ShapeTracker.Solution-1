@@ -20,6 +20,13 @@ namespace ShapeTracker
       int length2 = int.Parse(stringNumber2);  
       int length3 = int.Parse(stringNumber3);  
       Triangle tri = new Triangle(length1, length2, length3);
+      // new method call below!
+      ConfirmOrEditTriangle(tri);
+    }
+
+    static void ConfirmOrEditTriangle(Triangle tri)
+    {
+      // code to confirm or edit our triangle will go here.
     }
   }
 }
