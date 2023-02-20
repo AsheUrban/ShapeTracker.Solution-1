@@ -2,39 +2,58 @@ namespace ShapeTracker.Models
 {
   public class Triangle 
   {
-    private int _Side1;
-    private int _Side2;
-    private int _Side3;
+    private int _side1;
+    private int _side2;
+    private int _side3;
 
     public Triangle(int length1, int length2, int length3) 
     {
-      _Side1 = length1;
-      _Side2 = length2;
-      _Side3 = length3;
+      _side1 = length1;
+      _side2 = length2;
+      _side3 = length3;
     }
-    public void GetSide1(int newSide)
+
+    public int GetSide1()
     {
-      _Side1 = newSide;
+      return _side1;
     }
-    public void GetSide2(int newSide)
+
+    public int GetSide2()
     {
-      _Side2 = newSide;
+      return _side2;
     }
-    public void GetSide3(int newSide)
+
+    public int GetSide3()
     {
-      _Side3 = newSide;
+      return _side3;
     }
+
+    public void SetSide1(int newSide)
+    {
+      _side1 = newSide;
+    }
+
+    public void SetSide2(int newSide)
+    {
+      _side2 = newSide;
+    }
+
+    public void SetSide3(int newSide)
+    {
+      _side3 = newSide;
+    }
+
     public string CheckType() 
-    { 
-      if ((Side1 > (Side2 + Side3)) || (Side2 > (Side1 + Side3)) || (Side3 > (Side1 + Side2)))
+    {
+      if ((_side1 > (_side2 + _side3)) || (_side2 > (_side1 + _side3)) || (_side3 > (_side1 + _side2)))
       {
         return "not a triangle";
       } 
-      else if ((Side1 != Side2) && ((Side1 != Side3)) && ((Side2 != Side3))) 
+      else if ((_side1 != _side2) && ((_side1 != _side3)) && ((_side2 != _side3))) 
       {
         return "scalene triangle";
       }  
-      else if ((Side1 == Side2) && (Side1 == Side3)) 
+      else if ((_side1 == _side2) && (_side1 == _side3)) 
       {
         return "equilateral triangle";
       } 
