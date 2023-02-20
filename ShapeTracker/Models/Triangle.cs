@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace ShapeTracker.Models 
 {
   public class Triangle 
@@ -5,6 +7,8 @@ namespace ShapeTracker.Models
     private int _side1;
     private int _side2;
     private int _side3;
+
+  private static List<Triangle> _instances = new List<Triangle> {};
 
     public Triangle(int length1, int length2, int length3) 
     {
