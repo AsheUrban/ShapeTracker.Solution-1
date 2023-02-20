@@ -2,17 +2,28 @@ namespace ShapeTracker.Models
 {
   public class Triangle 
   {
-    public int Side1;
-    public int Side2;
-    public int Side3;
+    public int _Side1;
+    public int _Side2;
+    public int _Side3;
 
     public Triangle(int length1, int length2, int length3) 
     {
-      Side1 = length1;
-      Side2 = length2;
-      Side3 = length3;
+      _Side1 = length1;
+      _Side2 = length2;
+      _Side3 = length3;
     }
-
+    public int GetSide1()
+    {
+      return _Side1;
+    }
+    public int GetSide2()
+    {
+      return _Side2;
+    }
+    public int GetSide3()
+    {
+      return _Side3;
+    }
     public string CheckType() 
     { 
       if ((Side1 > (Side2 + Side3)) || (Side2 > (Side1 + Side3)) || (Side3 > (Side1 + Side2)))
