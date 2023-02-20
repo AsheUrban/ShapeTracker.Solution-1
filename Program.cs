@@ -5,6 +5,6 @@ class Program
   static void Main() 
   {
     // c# pgm code goes here.
-    Console.WriteLine("Hello World!"); 
+    Console.WriteLine("Hello World! This is required to have one entry point called Main() in our project's code"); 
   }
 }
