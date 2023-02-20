@@ -77,6 +77,11 @@ namespace ShapeTracker.Models
 
     public static List<Triangle> GetAll()
     {
+      return _instances;
+    }
+
+    public static List<Triangle> ClearAll()
+    {
       _instances.Clear();
     }
   }
