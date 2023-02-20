@@ -8,6 +8,7 @@ namespace ShapeTracker.Models
     private int _side2;
     private int _side3;
 
+// static field 
   private static List<Triangle> _instances = new List<Triangle> {};
 
     public Triangle(int length1, int length2, int length3) 
@@ -15,6 +16,7 @@ namespace ShapeTracker.Models
       _side1 = length1;
       _side2 = length2;
       _side3 = length3;
+      _instances.Add(this);
     }
 
     public int GetSide1()
@@ -30,6 +32,10 @@ namespace ShapeTracker.Models
     public int GetSide3()
     {
       return _side3;
+    }
+    public static List<Triangle> GetAll()
+    {
+      return _instances;
     }
 
     public void SetSide1(int newSide)
