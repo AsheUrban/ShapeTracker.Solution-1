@@ -26,7 +26,13 @@ namespace ShapeTracker
 
     static void ConfirmOrEditTriangle(Triangle tri)
     {
-      // code to confirm or edit our triangle will go here.
+      
+      Console.WriteLine("Please confirm that you entered in your triangle correctly:");
+      Console.WriteLine($"Side 1 has a length of {tri.GetSide1()}.");
+      Console.WriteLine($"Side 2 has a length of {tri.GetSide2()}.");
+      Console.WriteLine($"Side 3 has a length of {tri.GetSide3()}.");
+      Console.WriteLine("Is that correct? Enter 'yes' to proceed, or 'no' to re-enter the triangle's sides");
+      string userInput = Console.ReadLine();  
     }
   }
 }
