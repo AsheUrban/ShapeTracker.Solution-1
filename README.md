@@ -1,4 +1,4 @@
-# _Shape Tracker API_
+# _Shape Tracker_
 
 #### By _Vera Weikel_
 
