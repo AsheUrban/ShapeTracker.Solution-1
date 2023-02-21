@@ -22,9 +22,9 @@ namespace ShapeTracker
         // properties from the ConsoleColor class
         Console.BackgroundColor = ConsoleColor.White;
         Console.ForegroundColor = ConsoleColor.Black;
-        int length1 = int.Parse(stringNumber1);  
-        int length2 = int.Parse(stringNumber2);  
-        int length3 = int.Parse(stringNumber3);  
+        int length1 = Convert.ToInt32(stringNumber1);  
+        int length2 = Convert.ToInt32(stringNumber2);  
+        int length3 = Convert.ToInt32(stringNumber3);  
         Triangle tri = new Triangle(length1, length2, length3);
         ConfirmOrEditTriangle(tri);
       }
