@@ -19,6 +19,9 @@ namespace ShapeTracker
       
       try
       {
+        // properties from the ConsoleColor class
+        Console.BackgroundColor = ConsoleColor.White;
+        Console.ForegroundColor = ConsoleColor.Black;
         int length1 = int.Parse(stringNumber1);  
         int length2 = int.Parse(stringNumber2);  
         int length3 = int.Parse(stringNumber3);  
