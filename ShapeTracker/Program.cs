@@ -29,6 +29,9 @@ namespace ShapeTracker
       {
         Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         Console.WriteLine("ERROR: {0}", ex.Message);
+        Console.WriteLine("Source = {0}", ex.Source);
+        Console.WriteLine("StackTrace = {0}", ex.StackTrace);
+        Console.WriteLine("TargetSite = {0}", ex.TargetSite);
         Console.WriteLine("ERROR: Please only enter in numbers! Special symbols and alphabetic characters will not be accepted.");
         Console.WriteLine("Please try again...");
         Main();
