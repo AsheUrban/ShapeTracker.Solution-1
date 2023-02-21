@@ -24,14 +24,14 @@ namespace ShapeTracker.Models
       _instances.Add(this);
     }
 
-    // overloading constructor 
-    public Triangle(int length1, int length2, int length3, string userGuess)
+    // DRY up constructor overload
+    public Triangle(int length1, int length2, int length3, string userGuess): this (length1, length2, length3)
     {
-      _side1 = length1; 
-      Side2 = length2;
-      _side3 = length3;
+      // _side1 = length1; 
+      // Side2 = length2;
+      // _side3 = length3;
       Guess = userGuess; 
-      _instances.Add(this);
+      // _instances.Add(this);
     }
 
     public int GetSide3()
