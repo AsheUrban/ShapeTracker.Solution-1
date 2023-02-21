@@ -34,9 +34,13 @@ namespace ShapeTracker.Models
       {
         return "not a triangle";
       } 
-      else 
+      else if ((Side1 != Side2) && ((Side1 != _side3)) && ((Side2 != _side3))) 
       {
         return "scalene triangle";
+      }
+      else
+      {
+        return "isosceles triangle";
       }
     }
   }
