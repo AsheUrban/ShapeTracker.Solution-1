@@ -1,12 +1,18 @@
-using System.Collections.Generic;
+using System; // for IDisposable
+using System.Collections.Generic; // Linq List
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ShapeTracker.Models;
 
 namespace ShapeTracker.Tests
 {
   [TestClass]
-  public class TriangleTests
+  public class TriangleTests : IDisposable
+  { 
+    // special method that will run between tests to perform cleanup: _instances through ClearAll(). Dispose()
+  public void Dispose()
   {
+    Triangle.ClearAll(); // defined at end
+  }
     [TestMethod]
     public void TriangleConstructor_CreatesInstanceOfTriangle_Triangle()
     {
@@ -147,6 +153,20 @@ namespace ShapeTracker.Tests
       List<Triangle> actualResult = Triangle.GetAll();
       // Assert
       CollectionAssert.AreEqual(expected, actualResult);
+    }
+
+      [TestMethod]
+    public void ClearAll_DeletesAllTriangleInList_Void()
+    {
+      // Arrange
+      Triangle tri1 = new Triangle(2, 2, 9);
+      Triangle tri2 = new Triangle(21, 3, 9);
+      Triangle tri3 = new Triangle(1, 3, 9);
+      List<Triangle> expected = new List<Triangle> { };
+      // Act
+      Triangle.ClearAll();
+      // Assert
+      CollectionAssert.AreEqual(expected, Triangle.GetAll());
     }
   }
 }
