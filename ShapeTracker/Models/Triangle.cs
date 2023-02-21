@@ -14,6 +14,8 @@ namespace ShapeTracker.Models
     public int Side2 { get; set; }
     private int _side3; 
     private static List<Triangle> _instances = new List<Triangle> {};
+    // auto-implemented property (like Side2)
+    public string Guess { get; set; }
     public Triangle(int length1, int length2, int length3)
     {
       _side1 = length1;

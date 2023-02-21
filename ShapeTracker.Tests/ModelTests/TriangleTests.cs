@@ -16,7 +16,7 @@ namespace ShapeTracker.Tests
     [TestMethod]
     public void TriangleConstructor_CreatesInstanceOfTriangle_Triangle()
     {
-      Triangle newTriangle = new Triangle(2, 3, 5); // passes a length param property value
+      Triangle newTriangle = new Triangle(2, 3, 5, "isosceles"); // passes a length param property value
       Assert.AreEqual(typeof(Triangle), newTriangle.GetType());
     }
 
@@ -25,7 +25,7 @@ namespace ShapeTracker.Tests
     {
       // Arrange
       int length1 = 3;
-      Triangle newTriangle = new Triangle(length1, 2, 8);
+      Triangle newTriangle = new Triangle(length1, 2, 8, "isosceles");
       // Act (by calling a method or retreiving a property) ie. Side1
       int result = newTriangle.Side1;
       // Assert
@@ -36,7 +36,7 @@ namespace ShapeTracker.Tests
     public void SetSide1_SetsValueOfSide1_Void()
     {
       // Arrange
-      Triangle newTriangle = new Triangle(3, 3, 8);
+      Triangle newTriangle = new Triangle(3, 3, 8, "isosceles");
       int newLength1 = 44;
       // Act
       newTriangle.Side1 = newLength1;
@@ -50,7 +50,7 @@ namespace ShapeTracker.Tests
     {
       // Arrange
       int length2 = 3;
-      Triangle newTriangle = new Triangle(2, length2, 8);
+      Triangle newTriangle = new Triangle(2, length2, 8, "isosceles");
       // Act
       int result = newTriangle.Side2;
       // Assert
@@ -61,7 +61,7 @@ namespace ShapeTracker.Tests
     public void SetSide2_SetsValueOfSide2_Void()
     {
       // Arrange
-      Triangle newTriangle = new Triangle(3, 4, 8);
+      Triangle newTriangle = new Triangle(3, 4, 8, "isosceles");
       int newLength2 = 6;
       // Act
       newTriangle.Side2 = newLength2;
@@ -76,7 +76,7 @@ namespace ShapeTracker.Tests
     {
       // Arrange
       int length3 = 55;
-      Triangle newTriangle = new Triangle(2, 3, length3);
+      Triangle newTriangle = new Triangle(2, 3, length3, "isosceles");
       // Act
       int result = newTriangle.GetSide3();
       // Assert
@@ -87,7 +87,7 @@ namespace ShapeTracker.Tests
     public void SetSide3_SetsValueOfSide3_Void()
     {
       // Arrange
-      Triangle newTriangle = new Triangle(3, 4, 8);
+      Triangle newTriangle = new Triangle(3, 4, 8, "isosceles");
       int newLength3 = 6;
       // Act
       newTriangle.SetSide3(newLength3);
@@ -100,7 +100,7 @@ namespace ShapeTracker.Tests
     public void CheckType_DeterminesWhenNotATriangle_String()
     {
       // Arrange
-      Triangle notATriangle = new Triangle(3, 4, 88);
+      Triangle notATriangle = new Triangle(3, 4, 88, "isosceles");
       // Act
       string triType = notATriangle.CheckType();
       // Assert
@@ -111,7 +111,7 @@ namespace ShapeTracker.Tests
     public void CheckType_DeterminesWhenScalene_String()
     {
       // Arrange
-      Triangle scaleneTri = new Triangle(3, 4, 5);
+      Triangle scaleneTri = new Triangle(3, 4, 5, "isosceles");
       // Act
       string triType = scaleneTri.CheckType();
       // Assert
@@ -122,7 +122,7 @@ namespace ShapeTracker.Tests
     public void CheckType_DeterminesWhenIsosceles_String()
     {
       // Arrange
-      Triangle isoscelesTri = new Triangle(5, 4, 4);
+      Triangle isoscelesTri = new Triangle(5, 4, 4, "isosceles");
       // Act
       string triType = isoscelesTri.CheckType();
       // Assert
@@ -133,7 +133,7 @@ namespace ShapeTracker.Tests
     public void CheckType_DeterminesWhenEquilateral_String()
     {
       // Arrange
-      Triangle equiTri = new Triangle(4, 4, 4);
+      Triangle equiTri = new Triangle(4, 4, 4, "isosceles");
       // Act
       string triType = equiTri.CheckType();
       // Assert
@@ -145,9 +145,9 @@ namespace ShapeTracker.Tests
     public void GetAll_ReturnsAllTriangleInstances_List()
     {
       // Arrange
-      Triangle tri1 = new Triangle(2, 2, 9);
-      Triangle tri2 = new Triangle(21, 3, 9);
-      Triangle tri3 = new Triangle(1, 3, 9);
+      Triangle tri1 = new Triangle(2, 2, 9, "isosceles");
+      Triangle tri2 = new Triangle(21, 3, 9, "isosceles");
+      Triangle tri3 = new Triangle(1, 3, 9, "isosceles");
       List<Triangle> expected = new List<Triangle> { tri1, tri2, tri3 };
       // Act
       List<Triangle> actualResult = Triangle.GetAll();
@@ -159,9 +159,9 @@ namespace ShapeTracker.Tests
     public void ClearAll_DeletesAllTriangleInList_Void()
     {
       // Arrange
-      Triangle tri1 = new Triangle(2, 2, 9);
-      Triangle tri2 = new Triangle(21, 3, 9);
-      Triangle tri3 = new Triangle(1, 3, 9);
+      Triangle tri1 = new Triangle(2, 2, 9, "isosceles");
+      Triangle tri2 = new Triangle(21, 3, 9, "isosceles");
+      Triangle tri3 = new Triangle(1, 3, 9, "isosceles");
       List<Triangle> expected = new List<Triangle> { };
       // Act
       Triangle.ClearAll();
