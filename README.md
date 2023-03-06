@@ -1,6 +1,6 @@
 # _Shape Tracker_
 
-#### By _Vera Weikel_
+#### By _Ashe Urban_
 
 #### _A project built to create a Shape Tracker application_
 
@@ -10,21 +10,20 @@
 
 ## Goal
 
-_This project objective is to further explore and practice API's_
+_This project objective is to further explore and practice using APIs_
 
 ## Description
 
 A shape tracker application where a user should be able to type in an amount and be told triangle type.
 
 ## Setup/Installation Requirements
-<!-- - To get an API key for ExchangeRate-API click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
-- Input your email address and click the "Get Free Key" button.
+
+- Visit...
 - You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
-- At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for two weeks. -->
-<!-- - Clone or download to your local repository click  -->
-<!-- - add .env to our .gitignore file now.
-- create a .env file in the root directory of our project -->
-<!-- - The variable that we're storing in the .env is the key: API_KEY -->
+- At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for two weeks. 
+- Clone or download to your local repository click
+- add .env to .gitignore
+- touch.env file in the root directory of project and add API_KEY
 
 1. Clone the repo, click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
 2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ShapeTracker".
@@ -39,7 +38,7 @@ A shape tracker application where a user should be able to type in an amount and
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2023 Vera Weikel
+Copyright (c) 2023 Ashe Urban
 
 MIT License
 
