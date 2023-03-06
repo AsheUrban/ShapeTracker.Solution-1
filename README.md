@@ -1,6 +1,6 @@
 # _Shape Tracker_
 
-#### By _Ashe Urban_
+#### By _Vera Weikel_ & _Ashe Urban_
 
 #### _A project built to create a Shape Tracker application_
 
@@ -8,25 +8,14 @@
 
 - _C#_
 
-## Goal
-
-_This project objective is to further explore and practice using APIs_
-
 ## Description
 
-A shape tracker application where a user should be able to type in an amount and be told triangle type.
+A shape tracker application where a user should be able to declare lengths for three sides and be told triangle type.
 
 ## Setup/Installation Requirements
 
-- Visit...
-- You'll be prompted to create an account with your email, first name and a password. Agree to the terms of use and click "Get Started!"
-- At this point, you'll be able to access a dashboard that includes your API key as well as your remaining API calls for two weeks. 
-- Clone or download to your local repository click
-- add .env to .gitignore
-- touch.env file in the root directory of project and add API_KEY
-
-1. Clone the repo, click [here](https://github.com/QuietEvolver/ShapeTracker.Solution.git)
-2. Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ShapeTracker".
+1. Clone or download the repo down to your local machine.
+2. Open your terminal and navigate to this project's root directory called "ShapeTracker".
 3. In the command line, run the command "dotnet run" to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal.
 4. Optionally, you can run "dotnet build" to compile this console app without running it.
 
